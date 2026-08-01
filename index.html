@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lingsen You 游凌森 | Device–Vessel Suitcordance</title>
+<meta name="description" content="Lingsen You (游凌森), M.D., Ph.D. Interventional cardiologist at Zhongshan Hospital, Fudan University, and Scientific Secretary of the National Basic Science Center for Panvascular Interventional Complex Systems. Building device–vessel Suitcordance across intravascular imaging, bioresorbable materials, flexible electronics and computational models.">
+<meta name="keywords" content="Lingsen You, 游凌森, Suitcordance, panvascular, interventional cardiology, intravascular imaging, bioresorbable scaffold, flexible electronics, digital twin, Zhongshan Hospital, Fudan University, Junbo Ge">
+<meta name="author" content="Lingsen You">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lingsenyou.github.io/Scientific/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Lingsen You 游凌森 | Device–Vessel Suitcordance">
+<meta property="og:description" content="Interventional cardiologist building the bridge between engineering and the artery.">
+<meta property="og:url" content="https://lingsenyou.github.io/Scientific/">
+<meta property="og:image" content="https://lingsenyou.github.io/Scientific/avatar.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#070c14" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f3f5f8" media="(prefers-color-scheme: light)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E%F0%9F%AB%80%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Lingsen You",
+  "alternateName":"游凌森",
+  "jobTitle":"Interventional Cardiologist; Scientific Secretary",
+  "affiliation":{"@type":"Organization","name":"Zhongshan Hospital, Fudan University"},
+  "url":"https://lingsenyou.github.io/Scientific/",
+  "email":"lingsenyou@fudan.edu.cn",
+  "knowsAbout":["Panvascular intervention","Device–vessel Suitcordance","Intravascular imaging","Bioresorbable scaffolds","Flexible electronics","Digital twins"]
+}
+</script>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --ground:#f3f5f8;
+    --surface:#ffffff;
+    --ink:#0d1624;
+    --ink-soft:#59677a;
+    --ink-faint:#8b98a8;
+    --line:rgba(13,22,36,.10);
+    --line-strong:rgba(13,22,36,.18);
+    --artery:#c0263c;
+    --artery-soft:#e8404f;
+    --deep:#070c14;
+    --deep-2:#0c1626;
+    --maxw:960px;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","Cascadia Code","Segoe UI Mono",Consolas,monospace;
+  }
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(20px,4vw,32px)}
+  h1,h2,h3{margin:0;line-height:1.08;text-wrap:balance}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--artery);outline-offset:3px;border-radius:4px}
+  .mono{font-family:var(--mono)}
+  .eyebrow{font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);font-weight:600}
+
+  /* ---------- nav ---------- */
+  nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .3s ease, border-color .3s ease, backdrop-filter .3s ease;border-bottom:1px solid transparent}
+  nav.solid{background:rgba(243,245,248,.86);backdrop-filter:blur(14px) saturate(1.4);border-bottom-color:var(--line)}
+  .navin{display:flex;align-items:center;gap:20px;padding-block:15px}
+  .brand{margin-right:auto;display:flex;align-items:baseline;gap:10px;text-decoration:none;font-weight:800;letter-spacing:-.02em;font-size:1.02rem;color:#fff;transition:color .3s ease}
+  nav.solid .brand{color:var(--ink)}
+  .brand span.zh{font-weight:500;font-size:.82rem;color:rgba(255,255,255,.62);transition:color .3s ease}
+  nav.solid .brand span.zh{color:var(--ink-faint)}
+  .navlinks{display:flex;gap:24px}
+  .navlinks a{font-size:.86rem;font-weight:600;text-decoration:none;color:rgba(255,255,255,.74);transition:color .3s ease}
+  nav.solid .navlinks a{color:var(--ink-soft)}
+  .navlinks a:hover{color:var(--artery-soft)}
+  nav.solid .navlinks a:hover{color:var(--artery)}
+  @media (max-width:720px){ .navlinks{display:none} }
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;min-height:min(94vh,860px);display:flex;align-items:center;background:var(--deep);overflow:hidden}
+  .herovid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+    filter:saturate(.7) contrast(1.04) brightness(.92)}
+  /* Two scrims: one weighted to the left so the headline always has a dark bed,
+     one running to the page colour so the hero dissolves into the body. */
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      linear-gradient(96deg, rgba(6,11,18,.90) 0%, rgba(6,11,18,.74) 38%, rgba(6,11,18,.46) 66%, rgba(6,11,18,.38) 100%),
+      radial-gradient(1100px 620px at 78% 40%, rgba(192,38,60,.20), transparent 64%),
+      linear-gradient(180deg, rgba(6,11,18,.30) 0%, rgba(6,11,18,0) 34%, rgba(6,11,18,.10) 76%, var(--ground) 99.5%)}
+  @media (max-width:720px){
+    .hero::after{background:
+      linear-gradient(180deg, rgba(6,11,18,.86) 0%, rgba(6,11,18,.72) 46%, rgba(6,11,18,.66) 74%, var(--ground) 99.5%),
+      radial-gradient(700px 420px at 70% 30%, rgba(192,38,60,.18), transparent 66%)}
+  }
+  .heroin{position:relative;z-index:2;width:100%;padding-block:clamp(96px,14vh,150px) clamp(52px,9vh,96px)}
+  .kicker{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.88);background:rgba(6,11,18,.34);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:6px 13px;backdrop-filter:blur(6px)}
+  .kicker i{width:6px;height:6px;border-radius:50%;background:var(--artery-soft);box-shadow:0 0 10px var(--artery-soft);animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.45;transform:scale(.82)}50%{opacity:1;transform:scale(1)}}
+  .hero h1{margin-top:22px;font-size:clamp(2.5rem,7.4vw,5.1rem);font-weight:800;letter-spacing:-.045em;color:#fff;text-shadow:0 2px 26px rgba(3,7,12,.5)}
+  .hero h1 em{font-style:normal;color:var(--artery-soft)}
+  .hero .sub{margin-top:20px;font-size:clamp(1.02rem,1.9vw,1.32rem);font-weight:600;color:rgba(255,255,255,.95);text-shadow:0 1px 14px rgba(3,7,12,.55);letter-spacing:-.012em;max-width:30ch}
+  .hero .lede{margin-top:16px;font-size:clamp(.95rem,1.35vw,1.04rem);color:rgba(255,255,255,.80);max-width:56ch;text-shadow:0 1px 12px rgba(3,7,12,.5)}
+  .herolinks{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px}
+  .hl{display:inline-flex;align-items:center;gap:7px;font-size:.85rem;font-weight:600;text-decoration:none;color:rgba(255,255,255,.88);
+      border:1px solid rgba(255,255,255,.20);background:rgba(255,255,255,.06);border-radius:999px;padding:9px 16px;backdrop-filter:blur(6px);transition:all .16s ease}
+  .hl:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.42);transform:translateY(-1px)}
+  .hl.primary{background:var(--artery);border-color:var(--artery);color:#fff}
+  .hl.primary:hover{background:var(--artery-soft);border-color:var(--artery-soft)}
+  .scrollcue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:2;font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.34)}
+
+  /* ---------- sections ---------- */
+  section.blk{padding-block:clamp(52px,7vw,86px)}
+  .shead{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+  .shead h2{font-size:clamp(1.42rem,2.7vw,1.92rem);font-weight:800;letter-spacing:-.028em}
+  .shead .rule{flex:1;height:1px;background:var(--line);min-width:30px}
+
+  /* overview */
+  .ov{display:grid;grid-template-columns:184px 1fr;gap:34px;align-items:start}
+  @media (max-width:720px){ .ov{grid-template-columns:1fr;gap:22px} }
+  .ov img{width:184px;height:184px;border-radius:14px;object-fit:cover;display:block;box-shadow:0 18px 42px -22px rgba(13,22,36,.55)}
+  .ov p{margin:0 0 14px;color:var(--ink-soft);font-size:1rem}
+  .ov p strong{color:var(--ink);font-weight:700}
+  .roles{display:flex;flex-direction:column;gap:9px;margin-top:18px}
+  .role{display:flex;gap:12px;align-items:baseline;font-size:.92rem}
+  .role b{font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--artery);flex:none;width:74px;padding-top:2px}
+  .role span{color:var(--ink-soft)}
+  .role span i{font-style:normal;color:var(--ink);font-weight:600}
+
+  /* idea band */
+  .idea{background:var(--deep-2);color:#fff;border-radius:16px;padding:clamp(24px,3.4vw,38px);position:relative;overflow:hidden}
+  .idea::before{content:"";position:absolute;inset:0;opacity:.5;
+    background:radial-gradient(680px 320px at 88% 8%, rgba(192,38,60,.28), transparent 62%)}
+  .idea > *{position:relative}
+  .idea .eyebrow{color:rgba(255,255,255,.52)}
+  .idea h3{font-size:clamp(1.24rem,2.4vw,1.68rem);font-weight:800;letter-spacing:-.028em;margin-top:11px}
+  .idea h3 em{font-style:normal;color:var(--artery-soft)}
+  .idea p{color:rgba(255,255,255,.68);margin:13px 0 0;max-width:64ch;font-size:.97rem}
+  .axes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+  @media (max-width:640px){ .axes{grid-template-columns:1fr} }
+  .axis{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);border-radius:11px;padding:14px 16px}
+  .axis b{display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.11em;text-transform:uppercase;color:var(--artery-soft);margin-bottom:6px}
+  .axis span{font-size:.88rem;color:rgba(255,255,255,.78)}
+
+  /* publications */
+  .pubs{display:flex;flex-direction:column;gap:11px}
+  .pub{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:17px 19px;transition:border-color .16s ease, box-shadow .16s ease, transform .16s ease}
+  .pub:hover{border-color:var(--line-strong);box-shadow:0 14px 34px -24px rgba(13,22,36,.5);transform:translateY(-1px)}
+  .pmeta{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:9px}
+  .badge{font-family:var(--mono);font-size:.63rem;letter-spacing:.05em;font-weight:700;border-radius:5px;padding:4px 8px;white-space:nowrap}
+  .badge.venue{background:var(--ink);color:#fff}
+  .badge.if{background:transparent;color:var(--artery);border:1px solid var(--artery)}
+  .badge.year{background:transparent;color:var(--ink-faint);border:1px solid var(--line-strong)}
+  .badge.flag{background:#fdeef0;color:var(--artery)}
+  .badge.role{background:rgba(13,22,36,.06);color:var(--ink-soft)}
+  .pub h3{font-size:1.02rem;font-weight:700;letter-spacing:-.014em;line-height:1.34}
+  .pub h3 a{text-decoration:none}
+  .pub h3 a:hover{color:var(--artery)}
+  .pub h3 em{font-style:italic}
+  .pau{font-size:.86rem;color:var(--ink-soft);margin-top:7px}
+  .pau u{text-decoration:none;font-weight:700;color:var(--ink);border-bottom:2px solid var(--artery)}
+  .pnote{font-size:.63rem;color:var(--ink-faint);font-family:var(--mono);margin-top:9px;letter-spacing:.03em}
+
+  /* honors */
+  .honors{display:flex;flex-direction:column;gap:2px}
+  .honor{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);align-items:baseline}
+  @media (max-width:560px){ .honor{grid-template-columns:1fr;gap:3px} }
+  .honor b{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:var(--artery);font-weight:700}
+  .honor span{font-size:.95rem}
+  .honor span i{font-style:normal;color:var(--ink-soft)}
+
+  /* tools */
+  .tools{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+  @media (max-width:640px){ .tools{grid-template-columns:1fr} }
+  .tool{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:19px;transition:all .16s ease}
+  .tool:hover{border-color:var(--artery);transform:translateY(-2px);box-shadow:0 16px 36px -24px rgba(192,38,60,.5)}
+  .tool b{display:block;font-size:1rem;font-weight:700;letter-spacing:-.015em}
+  .tool p{margin:7px 0 0;font-size:.88rem;color:var(--ink-soft)}
+  .tool .go{display:inline-block;margin-top:11px;font-family:var(--mono);font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;color:var(--artery);font-weight:700}
+
+  /* beyond */
+  .beyond{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+  @media (max-width:720px){ .beyond{grid-template-columns:1fr} }
+  .bcard{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:18px}
+  .bcard b{display:block;font-size:.95rem;font-weight:700;margin-bottom:6px}
+  .bcard p{margin:0;font-size:.87rem;color:var(--ink-soft)}
+
+  /* footer */
+  footer{border-top:1px solid var(--line);padding-block:30px;margin-top:26px}
+  .fin{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;font-size:.83rem;color:var(--ink-faint)}
+  .fin a{color:var(--ink-soft);text-decoration:none}
+  .fin a:hover{color:var(--artery)}
+  .fmail{display:flex;flex-wrap:wrap;gap:14px}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap navin">
+    <a class="brand" href="#top">Lingsen&nbsp;You <span class="zh">游凌森</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#idea">Suitcordance</a>
+      <a href="#research">Research</a>
+      <a href="#honors">Honors</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <video class="herovid" id="heroVid" autoplay muted loop playsinline preload="metadata"
+         poster="hero-poster.jpg" aria-hidden="true" tabindex="-1">
+    <source src="hero.mp4" type="video/mp4">
+  </video>
+  <div class="wrap heroin">
+    <span class="kicker"><i></i> Zhongshan Hospital &middot; Fudan University</span>
+    <h1>Making devices fit<br><em>living vessels</em>.</h1>
+    <p class="sub">Toward device&ndash;vessel Suitcordance in panvascular intervention.</p>
+    <p class="lede">
+      I am an interventional cardiologist working where the catheter meets the engineering bench:
+      intravascular imaging, bioresorbable materials, flexible electronics and computational models
+      of the artery.
+    </p>
+    <div class="herolinks">
+      <a class="hl primary" href="mailto:lingsenyou@fudan.edu.cn">Contact me</a>
+      <a class="hl" href="https://scholar.google.com/scholar?q=%22Lingsen+You%22+panvascular" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="hl" href="https://www.researchgate.net/profile/Lingsen-You" target="_blank" rel="noopener">ResearchGate</a>
+      <a class="hl" href="https://github.com/lingsenyou" target="_blank" rel="noopener">GitHub</a>
+      <a class="hl" href="https://twitter.com/lingsenyou" target="_blank" rel="noopener">X</a>
+    </div>
+  </div>
+  <span class="scrollcue">Scroll</span>
+</header>
+
+<main>
+
+  <section class="blk wrap" id="about">
+    <div class="shead"><span class="eyebrow">01</span><h2>About</h2><span class="rule"></span></div>
+    <div class="ov">
+      <img src="avatar.jpg" alt="Lingsen You (游凌森)">
+      <div>
+        <p>
+          I am an <strong>interventional cardiologist</strong> and research fellow at
+          <strong>Zhongshan Hospital, Fudan University</strong>, and serve as
+          <strong>Scientific Secretary</strong> of the National Basic Science Center for Panvascular
+          Interventional Complex Systems, working under the leadership of
+          <strong>Prof. Junbo Ge</strong>, Academician of the Chinese Academy of Sciences.
+        </p>
+        <p>
+          My work sits in the gap between biomedical engineering and clinical cardiology: from large
+          animal models for preclinical validation, to the flexible electronics and computational models
+          that make a device legible, to the moment it is first used in a person.
+        </p>
+        <p>
+          That arc now reaches the patient. I help drive the ongoing clinical programme of
+          <strong>XINSORB</strong>, China&rsquo;s first fully bioresorbable coronary scaffold, where much
+          of my work is the analysis and writing up of trial data now being prepared for
+          <strong>EAPCI 2027</strong> in Milan. It is the point at which the question is no longer whether
+          a device performs on the bench, but whether it belongs in the artery.
+        </p>
+        <div class="roles">
+          <div class="role"><b>Clinic</b><span>Interventional cardiology, <i>Zhongshan Hospital</i></span></div>
+          <div class="role"><b>Center</b><span>Scientific Secretary, <i>National Basic Science Center for Panvascular Interventional Complex Systems</i></span></div>
+          <div class="role"><b>Trial</b><span>Clinical programme of <i>XINSORB</i>, China&rsquo;s first fully bioresorbable coronary scaffold</span></div>
+          <div class="role"><b>Faculty</b><span>Oriental Pan-Vascular Devices Innovation College, <i>USST</i></span></div>
+          <div class="role"><b>Next</b><span>Preparing a research visit to <i>Prof. Patrick W. Serruys</i>, University of Galway</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk wrap" id="idea">
+    <div class="idea">
+      <span class="eyebrow">The idea I am chasing</span>
+      <h3><em>Suitcordance</em>: how well a device belongs in the vessel it is put into.</h3>
+      <p>
+        A stent can be perfectly deployed and still be a poor fit. Suitcordance names the state that
+        matters over a patient's lifetime: immediate mechanical suitability, plus long-term biological
+        concordance with the living wall. It is one measure spanning three balances, on both the acute
+        and the chronic timescale.
+      </p>
+      <div class="axes">
+        <div class="axis"><b>Mechanical</b><span>Stress, hemodynamics, apposition and expansion</span></div>
+        <div class="axis"><b>Cellular</b><span>Endothelium, smooth muscle, immune integration</span></div>
+        <div class="axis"><b>Physicochemical</b><span>pH, lipids, lactate, local immune milieu</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk wrap" id="research">
+    <div class="shead"><span class="eyebrow">02</span><h2>Selected publications</h2><span class="rule"></span></div>
+    <div class="pubs">
+
+      <article class="pub">
+        <div class="pmeta">
+          <span class="badge venue">Light: Science &amp; Applications</span>
+          <span class="badge if">IF 24</span>
+          <span class="badge flag">Nature Portfolio</span>
+          <span class="badge year">In press 2026</span>
+          <span class="badge role">Co-first author</span>
+        </div>
+        <h3>From Intravascular Imaging to Adaptive Vascular Care: Intelligent Photonics and Digital Twins in Panvascular Disease</h3>
+        <div class="pau"><u>L. You</u>, &hellip;, J.B. Ge</div>
+      </article>
+
+      <article class="pub">
+        <div class="pmeta">
+          <span class="badge venue">npj Flexible Electronics</span>
+          <span class="badge flag">Nature Portfolio</span>
+          <span class="badge year">2026</span>
+        </div>
+        <h3><a href="https://doi.org/10.1038/s41528-026-00537-5" target="_blank" rel="noopener">4A tetrahedron system: a synergistic framework for panvascular intervention empowered by flexible electronics</a></h3>
+        <div class="pau"><u>L. You</u>, &hellip;, J.B. Ge</div>
+      </article>
+
+      <article class="pub">
+        <div class="pmeta">
+          <span class="badge venue">Medicine Plus</span>
+          <span class="badge year">2026</span>
+        </div>
+        <h3><a href="https://doi.org/10.1016/j.medp.2026.100135" target="_blank" rel="noopener"><em>Suitcordance</em>: redefining device evolution for the era of early-onset panvascular disease</a></h3>
+        <div class="pau"><u>L. You</u>, &hellip;, J.B. Ge</div>
+      </article>
+
+      <article class="pub">
+        <div class="pmeta">
+          <span class="badge venue">Science Bulletin (C)</span>
+          <span class="badge year">2026</span>
+        </div>
+        <h3><a href="https://doi.org/10.1360/csb-2026-0332" target="_blank" rel="noopener">AI-assisted generation and screening of PLLA modifiers for bioresorbable vascular scaffolds</a></h3>
+        <div class="pau"><u>L. You</u>, &hellip;, J.B. Ge</div>
+      </article>
+
+      <article class="pub">
+        <div class="pmeta">
+          <span class="badge venue">European Heart Journal</span>
+          <span class="badge if">IF 35.6</span>
+          <span class="badge year">2025</span>
+        </div>
+        <h3><a href="https://doi.org/10.1093/eurheartj/ehaf418" target="_blank" rel="noopener">The foundation and development of China&rsquo;s National Basic Science Center for panvascular interventional complex systems: pioneering device-vessel <em>suitcordance</em> research</a></h3>
+        <div class="pau"><u>L. You</u>, &hellip;, J.B. Ge</div>
+      </article>
+
+      <article class="pub">
+        <div class="pmeta">
+          <span class="badge venue">Science Bulletin</span>
+          <span class="badge if">IF 21.1</span>
+          <span class="badge year">2025</span>
+        </div>
+        <h3><a href="https://doi.org/10.1016/j.scib.2025.12.051" target="_blank" rel="noopener">The FLOW Framework: a panvascular-on-a-chip platform to model systemic disease and guide panvascular interventional device suitcordance</a></h3>
+        <div class="pau"><u>L. You</u>, &hellip;, J.B. Ge</div>
+      </article>
+
+      <article class="pub">
+        <div class="pmeta">
+          <span class="badge venue">Advanced Fiber Materials</span>
+          <span class="badge if">IF 21.3</span>
+          <span class="badge year">2025</span>
+          <span class="badge flag">Best Cover Article 2024&ndash;2025</span>
+        </div>
+        <h3><a href="https://doi.org/10.1007/s42765-025-00542-9" target="_blank" rel="noopener">High-Suitcordance Intelligent Fibers for Panvascular Disease Monitoring-Intervention</a></h3>
+        <div class="pau"><u>L. You</u>, &hellip;, J.B. Ge</div>
+      </article>
+
+      <article class="pub">
+        <div class="pmeta">
+          <span class="badge venue">Research</span>
+          <span class="badge flag">Science Partner Journal</span>
+          <span class="badge year">2025</span>
+        </div>
+        <h3><a href="https://doi.org/10.34133/research.0974" target="_blank" rel="noopener">High Suitcordance for Panvascular Full-Watershed Organs: A New Interventional Perspective</a></h3>
+        <div class="pau"><u>L. You</u>, &hellip;, J.B. Ge</div>
+      </article>
+
+    </div>
+    <p class="pnote">Impact factors are the journals' most recent published values. Citation counts change daily and are therefore not printed here; each title links to its DOI of record.</p>
+  </section>
+
+  <section class="blk wrap" id="tools">
+    <div class="shead"><span class="eyebrow">03</span><h2>Things I built</h2><span class="rule"></span></div>
+    <div class="tools">
+      <a class="tool" href="https://lingsenyou.github.io/panvascular/">
+        <b>Panvascular Radar</b>
+        <p>A live reading instrument for the medicine &times; engineering frontier. Curated lenses over intravascular imaging, bioresorbable scaffolds, drug-coated balloons and coronary AI, queried in real time against OpenAlex with every record carrying its DOI.</p>
+        <span class="go">Open the radar &rarr;</span>
+      </a>
+      <a class="tool" href="https://lingsenyou.github.io/medeng/">
+        <b>Undergraduate Research Gateway</b>
+        <p>A non-profit route for undergraduates into active medical&ndash;engineering teams in China. Real sub-projects, a named mentor, and authorship earned under the ICMJE criteria. No fee is charged and no publication is promised.</p>
+        <span class="go">See the programme &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="blk wrap" id="honors">
+    <div class="shead"><span class="eyebrow">04</span><h2>Honors</h2><span class="rule"></span></div>
+    <div class="honors">
+      <div class="honor"><b>2024&ndash;2025</b><span>Best Cover Article Award, <i>Advanced Fiber Materials</i> (Springer Nature)</span></div>
+      <div class="honor"><b>2025</b><span>National Scholarship, <i>Ministry of Education, China</i></span></div>
+      <div class="honor"><b>2022</b><span>Outstanding Prize, English Speaking Contest, <i>Fudan University</i></span></div>
+      <div class="honor"><b>2020</b><span>National Award, International College Students&rsquo; Innovation Competition, <i>Ministry of Education, China</i></span></div>
+    </div>
+  </section>
+
+  <section class="blk wrap" id="beyond">
+    <div class="shead"><span class="eyebrow">05</span><h2>Beyond the lab</h2><span class="rule"></span></div>
+    <div class="beyond">
+      <div class="bcard"><b>Football</b><p>An active amateur player, representing Zhongshan Hospital in Shanghai municipal competitions.</p></div>
+      <div class="bcard"><b>Swimming</b><p>The endurance built in the pool turns out to match what long, complex procedures ask for.</p></div>
+      <div class="bcard"><b>Travel</b><p>Over a dozen countries so far, from the ruins of Rome to the Swiss Alps, and still counting.</p></div>
+    </div>
+  </section>
+
+  <section class="blk wrap" id="contact">
+    <div class="idea">
+      <span class="eyebrow">Get in touch</span>
+      <h3>Open to collaboration on <em>device&ndash;vessel matching</em>, imaging and computation.</h3>
+      <p>
+        If you work on intravascular optics, bioresorbable materials, flexible sensing or vascular
+        modelling, or you are a student looking for a real project, write to me. I read everything that
+        arrives.
+      </p>
+      <div class="herolinks">
+        <a class="hl primary" href="mailto:lingsenyou@fudan.edu.cn">lingsenyou@fudan.edu.cn</a>
+        <a class="hl" href="mailto:lingsenyou@gmail.com">lingsenyou@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap fin">
+    <span>&copy; 2026 Lingsen You (游凌森). Shanghai, China.</span>
+    <span class="fmail">
+      <a href="https://lingsenyou.github.io/">Full CV site</a>
+      <a href="https://lingsenyou.github.io/panvascular/">Radar</a>
+      <a href="https://lingsenyou.github.io/medeng/">Undergraduate research</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* nav turns solid once the dark hero has scrolled past */
+  var nav = document.getElementById("nav");
+  var hero = document.getElementById("top");
+  function onScroll(){
+    var past = window.scrollY > (hero.offsetHeight - 90);
+    nav.classList.toggle("solid", past);
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  /* Hero footage: a caption-free stretch of the hydrogel vascular scaffold fabrication
+     reel, muted and looping. It is decoration, so it yields to a reduced-motion request
+     and stops whenever the hero is off screen rather than draining a phone battery. */
+  var vid = document.getElementById("heroVid");
+  if (!vid) return;
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce){
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    return;                       /* the poster frame stays, which is the whole point */
+  }
+
+  /* Autoplay is refused by some browsers until the file is muted and inline; both are
+     set in the markup, and a refusal simply leaves the poster in place. */
+  var tryPlay = function(){
+    var p = vid.play();
+    if (p && typeof p.catch === "function") p.catch(function(){});
+  };
+  tryPlay();
+
+  if ("IntersectionObserver" in window){
+    new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) tryPlay();
+        else vid.pause();
+      });
+    }, {threshold: 0.05}).observe(hero);
+  }
+
+  document.addEventListener("visibilitychange", function(){
+    if (document.hidden) vid.pause();
+    else if (hero.getBoundingClientRect().bottom > 0) tryPlay();
+  });
+
+})();
+</script>
+</body>
+</html>
