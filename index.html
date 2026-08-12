@@ -183,9 +183,9 @@
 
   /* honors */
   .honors{display:flex;flex-direction:column;gap:2px}
-  .honor{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);align-items:baseline}
-  @media (max-width:560px){ .honor{grid-template-columns:1fr;gap:3px} }
-  .honor b{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:var(--artery);font-weight:700}
+  .honor{display:block;padding:13px 0;border-bottom:1px solid var(--line)}
+  @media (max-width:560px){  }
+  
   .honor span{font-size:.95rem}
   .honor span i{font-style:normal;color:var(--ink-soft)}
 
@@ -424,10 +424,10 @@
   <section class="blk wrap" id="honors">
     <div class="shead"><span class="eyebrow">04</span><h2>Honors</h2><span class="rule"></span></div>
     <div class="honors">
-      <div class="honor"><b>2024&ndash;2025</b><span>Best Cover Article Award, <i>Advanced Fiber Materials</i> (Springer Nature)</span></div>
-      <div class="honor"><b>2025</b><span>National Scholarship, <i>Ministry of Education, China</i></span></div>
-      <div class="honor"><b>2022</b><span>Outstanding Prize, English Speaking Contest, <i>Fudan University</i></span></div>
-      <div class="honor"><b>2020</b><span>National Award, International College Students&rsquo; Innovation Competition, <i>Ministry of Education, China</i></span></div>
+      <div class="honor"><span>Best Cover Article Award, <i>Advanced Fiber Materials</i> (Springer Nature)</span></div>
+      <div class="honor"><span>National Scholarship, <i>Ministry of Education, China</i></span></div>
+      <div class="honor"><span>Outstanding Prize, English Speaking Contest, <i>Fudan University</i></span></div>
+      <div class="honor"><span>National Award, International College Students&rsquo; Innovation Competition, <i>Ministry of Education, China</i></span></div>
     </div>
   </section>
 
