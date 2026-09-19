@@ -201,8 +201,9 @@
   .tool .go{display:inline-block;margin-top:11px;font-family:var(--mono);font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;color:var(--artery);font-weight:700}
 
   /* beyond */
-  .beyond{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
-  @media (max-width:720px){ .beyond{grid-template-columns:1fr} }
+  .beyond{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+  @media (max-width:980px){ .beyond{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:560px){ .beyond{grid-template-columns:1fr} }
   .bcard{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:18px}
   .bcard b{display:block;font-size:.95rem;font-weight:700;margin-bottom:6px}
   .bcard p{margin:0;font-size:.87rem;color:var(--ink-soft)}
@@ -463,6 +464,7 @@
     <div class="beyond">
       <div class="bcard"><b>Football</b><p>An active amateur player, representing Zhongshan Hospital in Shanghai municipal competitions.</p></div>
       <div class="bcard"><b>Swimming</b><p>The endurance built in the pool turns out to match what long, complex procedures ask for.</p></div>
+      <div class="bcard"><b>Strength training</b><p>Steady, measured work in the gym, which is the same discipline a long research programme asks for.</p></div>
       <div class="bcard"><b>Travel</b><p>Over a dozen countries so far, from the ruins of Rome to the Swiss Alps, and still counting.</p></div>
     </div>
   </section>
